@@ -1,0 +1,29 @@
+name: fuckgiteesync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download files to sync folder
+        run: |
+          mkdir -p sync
+          curl -L -o sync/unicast-aptv.m3u      https://raw.githubusercontent.com/plsy1/iptv/main/unicast/unicast-aptv.m3u
+          curl -L -o sync/unicast-douyu.m3u     https://raw.githubusercontent.com/plsy1/iptv/main/unicast/unicast-douyu.m3u
+          curl -L -o sync/unicast-yy.m3u        https://raw.githubusercontent.com/plsy1/iptv/main/unicast/unicast-yy.m3u
+          curl -L -o sync/multicast-taian.m3u   https://raw.githubusercontent.com/plsy1/iptv/main/multicast/multicast-taian.m3u
+
+      - name: Push to Gitee sync folder
+        run: |
+          git config user.name "bot"
+          git add .
+          git commit -m "sync" || true
+          git push https://mevoyacasa:${{ secrets.GITEE_TOKEN }}@gitee.com/mevoyacasa/iptv.git HEAD:master --force

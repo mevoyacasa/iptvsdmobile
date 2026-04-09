@@ -1,0 +1,150 @@
+#EXTM3U x-tvg-url="https://epg.zbds.top"
+#
+#EXTINF:-1 tvg-id="CCTV1" tvg-name="cctv1综合" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV1.png" group-title="1",CCTV-1 综合
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000311/index.m3u8
+#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV2财经" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV2.png" group-title="1",CCTV-2 财经
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000317/index.m3u8
+#EXTINF:-1 tvg-id="山东齐鲁" tvg-name="山东齐鲁" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Shandong2.png" group-title="1",山东齐鲁
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000313/index.m3u8
+#EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Shandong.png" group-title="1",山东卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000301/index.m3u8
+#EXTINF:-1 tvg-name="泰安综合" group-title="1" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/taian.jpg" ,泰安综合
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000269/index.m3u8
+#EXTINF:-1 tvg-id="泰安经济生活" tvg-name="泰安经济生活" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/taiangg.png" group-title="1",泰安经济生活  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000270/index.m3u8  
+#EXTINF:-1 tvg-name="泰山" group-title="1" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/taishan.png" ,泰山
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001114/index.m3u8
+#EXTINF:-1 tvg-name="岱岳" group-title="1" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/daiyue.png",岱岳
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001013/index.m3u8
+#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV3综艺" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV3.png" group-title="1",CCTV-3 综艺
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000359/index.m3u8
+#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV4中文国际" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV4.png" group-title="1",CCTV-4 中文国际
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000320/index.m3u8
+#EXTINF:-1 tvg-id="CCTV4E" tvg-name="CCTV4 欧洲" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV4oz.png" group-title="1",CCTV-4 欧洲
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000350/index.m3u8
+#EXTINF:-1 tvg-id="CCTV4A" tvg-name="CCTV4 美洲" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV4mz.png" group-title="1",CCTV-4 美洲
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000351/index.m3u8
+#EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV5体育" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV5.png" group-title="1",CCTV-5 体育
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000360/index.m3u8
+#EXTINF:-1 tvg-id="CCTV5+" tvg-name="CCTV5+体育赛事" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV5.png" group-title="1",CCTV-5+ 体育赛事
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000316/index.m3u8
+#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV6电影" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV6.png" group-title="1",CCTV-6 电影
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000361/index.m3u8
+#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV7国防军事" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV7.png" group-title="1",CCTV-7 国防军事
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000318/index.m3u8
+#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV8电视剧" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV8.png" group-title="1",CCTV-8 电视剧
+http://ucdn-zte.sd.chinamobile.com:8089/shandong_cabletv.live.zte.com////CHANNEL00000362/index.m3u8
+#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV9纪录片" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV9.png" group-title="1",CCTV-9 纪录
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000319/index.m3u8
+#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV10科教" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV10.png" group-title="1",CCTV-10 科教
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000321/index.m3u8
+#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV11戏曲" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV11.png" group-title="1",CCTV-11 戏曲
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000344/index.m3u8
+#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV12社会与法" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV12.png" group-title="1",CCTV-12 社会与法
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000322/index.m3u8
+#EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV13新闻" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV13.png" group-title="1",CCTV-13 新闻
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000345/index.m3u8
+#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV14少儿" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV14.png" group-title="1",CCTV-14 少儿
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000323/index.m3u8
+#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV15音乐" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV15.png" group-title="1",CCTV-15 音乐
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000346/index.m3u8
+#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV16奥林匹克" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV16.png" group-title="1",CCTV-16 奥林匹克
+http://120.198.234.194:8088/rrs04.hw.gmcc.net/PLTV/81/224/3221226825/1.m3u8?accountinfo=~~V2.0~J9nj7l8SVKmEpJU6hJkbQQ00aae3318f319d670741af5800048d2e~40sW3VwcpONWSNT4h__5EgySJj4dkWOMSuEk-KX2MLA4TgSG4eaw5XAWs9LSIVXYyVk59k7YKcOTDs_drYLm2g634a8c641b8225fe951e25831551dced~%2CEND&GuardEncType=2
+#EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV17农业农村" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV17.png" group-title="1",CCTV-17 农业农村
+http://ucdn-zte.sd.chinamobile.com:8089/shandong_cabletv.live.zte.com////CHANNEL00000303/index.m3u8
+#EXTINF:-1 tvg-id="cctv4k超高清" tvg-name="cctv4k超高清" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV4K.png" group-title="1",cctv4k 超高清 
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000382/index.m3u8  
+#EXTINF:-1 tvg-id="CHC高清电影" tvg-name="CHC高清电影" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CHC1.png" group-title="1",CHC高清电影  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00002029/index.m3u8  
+#EXTINF:-1 tvg-id="CHC动作电影" tvg-name="CHC动作电影" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CHC2.png" group-title="1",CHC动作电影  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00002030/index.m3u8  
+#EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CHC3.png" group-title="1",CHC家庭影院  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00002028/index.m3u8  
+#EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Beijing.png" group-title="1",北京卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000302/index.m3u8
+#EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Hunan.png" group-title="1",湖南卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000324/index.m3u8
+#EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Jiangsu.png" group-title="1",江苏卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000304/index.m3u8
+#EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Dongfang.png" group-title="1",东方卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000309/index.m3u8
+#EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Zhejiang.png" group-title="1",浙江卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000305/index.m3u8
+#EXTINF:-1 tvg-name="安徽卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Anhui.png" group-title="1",安徽卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000328/index.m3u8
+#EXTINF:-1 tvg-name="天津卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Tianjin.png" group-title="1",天津卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000327/index.m3u8
+#EXTINF:-1 tvg-name="四川卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Sichuan.png" group-title="1",四川卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000348/index.m3u8
+#EXTINF:-1 tvg-name="重庆卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Chongqing.png" group-title="1",重庆卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000341/index.m3u8
+#EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Shenzhen.png" group-title="1",深圳卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000308/index.m3u8
+#EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Guangdong.png" group-title="1",广东卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000307/index.m3u8
+#EXTINF:-1 tvg-name="广西卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Guangxi.png" group-title="1",广西卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000368/index.m3u8
+#EXTINF:-1 tvg-name="江西卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Jiangxi.png" group-title="1",江西卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000335/index.m3u8
+#EXTINF:-1 tvg-name="河北卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Hebei.png" group-title="1",河北卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000330/index.m3u8
+#EXTINF:-1 tvg-name="河南卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Henan.png" group-title="1",河南卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000358/index.m3u8
+#EXTINF:-1 tvg-name="湖北卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Hubei.png" group-title="1",湖北卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000325/index.m3u8
+#EXTINF:-1 tvg-name="东南卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Dongnan.png" group-title="1",东南卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000310/index.m3u8
+#EXTINF:-1 tvg-name="贵州卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Guizhou.png" group-title="1",贵州卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000329/index.m3u8
+#EXTINF:-1 tvg-name="辽宁卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Liaoning.png" group-title="1",辽宁卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000326/index.m3u8
+#EXTINF:-1 tvg-name="黑龙江卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Heilongjiang.png" group-title="1",黑龙江卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000306/index.m3u8
+#EXTINF:-1 tvg-name="甘肃卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Gansu.png" group-title="1",甘肃卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000349/index.m3u8
+#EXTINF:-1 tvg-name="云南卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Yunnan.png" group-title="1",云南卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000367/index.m3u8
+#EXTINF:-1 tvg-name="海南卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Hainan.png" group-title="1",海南卫视
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000347/index.m3u8
+#EXTINF:-1 tvg-id="内蒙古卫视" tvg-name="内蒙古卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Neimeng.png" group-title="1",内蒙古卫视  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000040/index.m3u8  
+#EXTINF:-1 tvg-id="西藏卫视" tvg-name="西藏卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Xizang.png" group-title="1",西藏卫视  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000045/index.m3u8  
+#EXTINF:-1 tvg-id="宁夏卫视" tvg-name="宁夏卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Ningxia.png" group-title="1",宁夏卫视  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000043/index.m3u8  
+#EXTINF:-1 tvg-id="青海卫视" tvg-name="青海卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Qinghai.png" group-title="1",青海卫视  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000366/index.m3u8  
+#EXTINF:-1 tvg-id="山东新闻" tvg-name="山东新闻" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Shandong1.png" group-title="1",山东新闻  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000314/index.m3u8  
+#EXTINF:-1 tvg-id="山东体育" tvg-name="山东体育" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Shandong3.png" group-title="1",山东体育  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000315/index.m3u8  
+#EXTINF:-1 tvg-id="山东生活" tvg-name="山东生活" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Shandong4.png" group-title="1",山东生活  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000336/index.m3u8  
+#EXTINF:-1 tvg-id="山东文旅" tvg-name="山东文旅" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Shandong5.png" group-title="1",山东文旅  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000337/index.m3u8  
+#EXTINF:-1 tvg-id="山东综艺" tvg-name="山东综艺" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Shandong6.png" group-title="1",山东综艺  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000338/index.m3u8  
+#EXTINF:-1 tvg-id="山东农科" tvg-name="山东农科" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Shandong7.png" group-title="1",山东农科  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000339/index.m3u8  
+#EXTINF:-1 tvg-name="肥城" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/feicheng.png" group-title="1",肥城
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001039/index.m3u8
+#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CGTN.png" group-title="1",CGTN
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000352/index.m3u8
+#EXTINF:-1 tvg-id="CGTN记录" tvg-name="CGTN纪录" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CGTNDOC.png" group-title="1",CGTN 纪录
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000353/index.m3u8
+#EXTINF:-1 tvg-id="CGTN西班牙语" tvg-name="CGTN西语" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CGTNES.png" group-title="1",CGTN 西语
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000354/index.m3u8
+#EXTINF:-1 tvg-id="CGTN法语" tvg-name="CGTN法语" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CGTNFR.png" group-title="1",CGTN 法语
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000355/index.m3u8
+#EXTINF:-1 tvg-id="CGTN阿拉伯语" tvg-name="CGTN阿语" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CGTNAR.png" group-title="1",CGTN 阿语
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000356/index.m3u8
+#EXTINF:-1 tvg-id="CGTN俄语" tvg-name="CGTN俄语" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CGTNRU.png" group-title="1",CGTN 俄语
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000357/index.m3u8
+#EXTINF:-1 tvg-id="兵团卫视" tvg-name="兵团卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/bingtuan.png" group-title="1",兵团卫视
+http://ucdn-zte.sd.chinamobile.com:8089/shandong_cabletv.live.zte.com////CHANNEL00000071/index.m3u8
+#EXTINF:-1 tvg-id="湖南金鹰纪实" tvg-name="湖南金鹰纪实" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Hunan9.png" group-title="1",湖南金鹰纪实
+http://ucdn-zte.sd.chinamobile.com:8089/shandong_cabletv.live.zte.com////CHANNEL00000334/index.m3u8
+#EXTINF:-1 tvg-id="河南文物宝库" tvg-name="河南文物宝库" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Henan1.png" group-title="1",河南文物宝库
+http://ucdn-zte.sd.chinamobile.com:8089/shandong_cabletv.live.zte.com////CHANNEL00000658/index.m3u8
+#EXTINF:-1 tvg-id="河南梨园" tvg-name="河南梨园" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Henan8.png" group-title="1",河南梨园
+http://ucdn-zte.sd.chinamobile.com:8089/shandong_cabletv.live.zte.com////CHANNEL00000656/index.m3u8
