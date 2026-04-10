@@ -1,29 +1,58 @@
-name: fuckgiteesync
+name: GitHub to Gitee Sync
 
+# 触发方式：手动触发 或 每天定时同步
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *"  # 每天 UTC 0 点同步一次
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+
     steps:
+      # 1️⃣ Checkout 当前仓库（可选，如果需要仓库文件）
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # 2️⃣ 创建同步目录并下载文件
       - name: Download files to sync folder
         run: |
           mkdir -p sync
-          curl -L -o sync/unicast-aptv.m3u      https://raw.githubusercontent.com/plsy1/iptv/main/unicast/unicast-aptv.m3u
-          curl -L -o sync/unicast-douyu.m3u     https://raw.githubusercontent.com/plsy1/iptv/main/unicast/unicast-douyu.m3u
-          curl -L -o sync/unicast-yy.m3u        https://raw.githubusercontent.com/plsy1/iptv/main/unicast/unicast-yy.m3u
-          curl -L -o sync/multicast-taian.m3u   https://raw.githubusercontent.com/plsy1/iptv/main/multicast/multicast-taian.m3u
+          # 定义需要下载的文件列表
+          FILES=(
+            "unicast-aptv"
+            "unicast-douyu"
+            "unicast-yy"
+            "multicast-taian"
+          )
+          for file in "${FILES[@]}"; do
+            # 根据你的 GitHub 仓库路径动态生成 URL
+            # 例如 unicast-aptv -> unicast/unicast-aptv.m3u
+            if [[ "$file" == multicast-* ]]; then
+              url="https://raw.githubusercontent.com/plsy1/iptv/main/multicast/${file}.m3u"
+            else
+              url="https://raw.githubusercontent.com/plsy1/iptv/main/unicast/${file}.m3u"
+            fi
+            echo "Downloading $file from $url"
+            # -f 失败时退出，-S 显示错误，-L 跟随重定向
+            curl -fsSL "$url" -o "sync/$file.m3u" || { echo "Failed to download $file"; exit 1; }
+          done
 
+      # 3️⃣ 调试：确认下载的文件
+      - name: List downloaded files
+        run: |
+          ls -lh sync/
+
+      # 4️⃣ 配置 Git 并提交到 Gitee
       - name: Push to Gitee sync folder
         run: |
           git config user.name "bot"
+          git config user.email "bot@example.com"
+          cd sync
+          git init
+          git remote add origin "https://mevoyacasa:${{ secrets.GITEE_TOKEN }}@gitee.com/mevoyacasa/iptv.git"
           git add .
-          git commit -m "sync" || true
-          git push https://mevoyacasa:${{ secrets.GITEE_TOKEN }}@gitee.com/mevoyacasa/iptv.git HEAD:master --force
+          git commit -m "Sync files from GitHub" || echo "Nothing to commit"
+          git push -u origin master --force
