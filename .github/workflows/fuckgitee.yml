@@ -1,6 +1,5 @@
 name: GitHub to Gitee Sync
 
-# 触发方式：手动触发 或 每天定时同步
 on:
   workflow_dispatch:
   schedule:
@@ -11,30 +10,43 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout 当前仓库（可选，如果需要仓库文件）
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - name: Create sync folder
+        run: mkdir -p sync
 
-      # 2️⃣ 创建同步目录并下载文件
-      - name: Download files to sync folder
+      - name: Download files from vidarsong/iptv-sdlt
         run: |
-          mkdir -p sync
-          # 定义需要下载的文件列表
           FILES=(
-            "unicast-aptv"
-            "unicast-douyu"
-            "unicast-yy"
-            "multicast-taian"
+            "unicast-aptv.m3u"
+            "unicast-douyu.m3u"
+            "unicast-yy.m3u"
+            "multicast-taian.m3u"
           )
+
           for file in "${FILES[@]}"; do
-            # 根据你的 GitHub 仓库路径动态生成 URL
-            # 例如 unicast-aptv -> unicast/unicast-aptv.m3u
-            if [[ "$file" == multicast-* ]]; then
-              url="https://raw.githubusercontent.com/plsy1/iptv/main/multicast/${file}.m3u"
+            # 判断文件是 unicast 还是 multicast
+            if [[ "$file" == multicast* ]]; then
+              url="https://raw.githubusercontent.com/vidarsong/iptv-sdlt/main/multicast/${file}"
             else
-              url="https://raw.githubusercontent.com/plsy1/iptv/main/unicast/${file}.m3u"
+              url="https://raw.githubusercontent.com/vidarsong/iptv-sdlt/main/unicast/${file}"
             fi
+            echo "Downloading $file from $url"
+            # 下载文件，如果失败，给出警告，但不退出
+            curl -fsSL "$url" -o "sync/$file" || echo "Warning: $file not found, skipping"
+          done
+
+      - name: List downloaded files
+        run: ls -lh sync/
+
+      - name: Push to Gitee sync folder
+        run: |
+          cd sync
+          git init
+          git config user.name "bot"
+          git config user.email "bot@example.com"
+          git remote add origin "https://mevoyacasa:${{ secrets.GITEE_TOKEN }}@gitee.com/mevoyacasa/iptv.git"
+          git add .
+          git commit -m "Sync files from vidarsong/iptv-sdlt" || echo "Nothing to commit"
+          git push -u origin master --force            fi
             echo "Downloading $file from $url"
             # -f 失败时退出，-S 显示错误，-L 跟随重定向
             curl -fsSL "$url" -o "sync/$file.m3u" || { echo "Failed to download $file"; exit 1; }
