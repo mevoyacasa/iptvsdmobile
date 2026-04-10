@@ -3,7 +3,7 @@ name: GitHub to Gitee Sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"  # 每天 UTC 0 点同步一次
+    - cron: "0 0 * * *"
 
 jobs:
   sync:
@@ -23,14 +23,12 @@ jobs:
           )
 
           for file in "${FILES[@]}"; do
-            # 判断文件是 unicast 还是 multicast
             if [[ "$file" == multicast* ]]; then
               url="https://raw.githubusercontent.com/vidarsong/iptv-sdlt/main/multicast/${file}"
             else
               url="https://raw.githubusercontent.com/vidarsong/iptv-sdlt/main/unicast/${file}"
             fi
             echo "Downloading $file from $url"
-            # 下载文件，如果失败，给出警告，但不退出
             curl -fsSL "$url" -o "sync/$file" || echo "Warning: $file not found, skipping"
           done
 
@@ -40,31 +38,10 @@ jobs:
       - name: Push to Gitee sync folder
         run: |
           cd sync
-          git init
+          git init -b main
           git config user.name "bot"
           git config user.email "bot@example.com"
           git remote add origin "https://mevoyacasa:${{ secrets.GITEE_TOKEN }}@gitee.com/mevoyacasa/iptv.git"
           git add .
           git commit -m "Sync files from vidarsong/iptv-sdlt" || echo "Nothing to commit"
-          git push -u origin master --force            fi
-            echo "Downloading $file from $url"
-            # -f 失败时退出，-S 显示错误，-L 跟随重定向
-            curl -fsSL "$url" -o "sync/$file.m3u" || { echo "Failed to download $file"; exit 1; }
-          done
-
-      # 3️⃣ 调试：确认下载的文件
-      - name: List downloaded files
-        run: |
-          ls -lh sync/
-
-      # 4️⃣ 配置 Git 并提交到 Gitee
-      - name: Push to Gitee sync folder
-        run: |
-          git config user.name "bot"
-          git config user.email "bot@example.com"
-          cd sync
-          git init
-          git remote add origin "https://mevoyacasa:${{ secrets.GITEE_TOKEN }}@gitee.com/mevoyacasa/iptv.git"
-          git add .
-          git commit -m "Sync files from GitHub" || echo "Nothing to commit"
-          git push -u origin master --force
+          git push -u origin main --force
