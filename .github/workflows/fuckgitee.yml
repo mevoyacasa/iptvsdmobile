@@ -1,6 +1,6 @@
 name: GitHub to Gitee Sync
 
-on:
+/on:
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
