@@ -1,3 +1,6 @@
-# iptvsdmobile
-山东移动ipv4单播源，稳定换台快，其他运营商无效
-导入potplayer vlc tivimate 可用
+## 山东移动 IPv4 单播源
+- 线路类型：IPv4 单播
+- 优势：播放稳定、换台极速
+- 适用范围：**仅山东移动网络**，其它运营商无法使用
+- 兼容播放器：PotPlayer / VLC / TiviMate等
+- 标准m3u8 直播源格式
