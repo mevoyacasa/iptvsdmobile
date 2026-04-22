@@ -8,14 +8,6 @@ http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000317/index.m3u8
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000313/index.m3u8
 #EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Shandong.png" group-title="1",山东卫视
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000301/index.m3u8
-#EXTINF:-1 tvg-name="泰安综合" group-title="1" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/taian.jpg" ,泰安综合
-http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000269/index.m3u8
-#EXTINF:-1 tvg-id="泰安经济生活" tvg-name="泰安经济生活" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/taiangg.png" group-title="1",泰安经济生活  
-http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000270/index.m3u8  
-#EXTINF:-1 tvg-name="泰山" group-title="1" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/taishan.png" ,泰山
-http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001114/index.m3u8
-#EXTINF:-1 tvg-name="岱岳" group-title="1" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/daiyue.png",岱岳
-http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001013/index.m3u8
 #EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV3综艺" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV3.png" group-title="1",CCTV-3 综艺
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000359/index.m3u8
 #EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV4中文国际" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/CCTV4.png" group-title="1",CCTV-4 中文国际
@@ -148,3 +140,11 @@ http://ucdn-zte.sd.chinamobile.com:8089/shandong_cabletv.live.zte.com////CHANNEL
 http://ucdn-zte.sd.chinamobile.com:8089/shandong_cabletv.live.zte.com////CHANNEL00000658/index.m3u8
 #EXTINF:-1 tvg-id="河南梨园" tvg-name="河南梨园" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/Henan8.png" group-title="1",河南梨园
 http://ucdn-zte.sd.chinamobile.com:8089/shandong_cabletv.live.zte.com////CHANNEL00000656/index.m3u8
+#EXTINF:-1 tvg-name="泰安综合" group-title="1" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/taian.jpg" ,泰安综合
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000269/index.m3u8
+#EXTINF:-1 tvg-id="泰安经济生活" tvg-name="泰安经济生活" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/taiangg.png" group-title="1",泰安经济生活  
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000270/index.m3u8  
+#EXTINF:-1 tvg-name="泰山" group-title="1" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/taishan.png" ,泰山
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001114/index.m3u8
+#EXTINF:-1 tvg-name="岱岳" group-title="1" tvg-logo="https://gitee.com/mevoyacasa/iptv/raw/master/png/daiyue.png",岱岳
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001013/index.m3u8
