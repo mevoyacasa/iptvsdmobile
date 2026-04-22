@@ -1,47 +1,36 @@
-name: GitHub to Gitee Sync
+name: Gitee Sync
 
-/on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * *"
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: 
 
 jobs:
-  sync:
+  repo-mirror:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Create sync folder
-        run: mkdir -p sync
+      - name: Checkout GitHub Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          repository: mevoyacasa/iptvsdmobile
 
-      - name: Download files from vidarsong/iptv-sdlt
+      - name: Edit README for Gitee Raw Images
         run: |
-          FILES=(
-            "unicast-aptv.m3u"
-            "unicast-douyu.m3u"
-            "unicast-yy.m3u"
-            "multicast-taian.m3u"
-          )
+          sed -i 's|github.com/mevoyacasa/iptvsdmobile/blob/main/|gitee.com/mevoyacasa/iptv/raw/main/|g' README.md
+          
+          git config --global user.name "Mirror Bot"
+          git config --global user.email "bot@example.com"
+          
+          git add README.md
+          git commit -m "Auto-fix: Update image paths to Gitee raw" || echo "No changes to commit"
 
-          for file in "${FILES[@]}"; do
-            if [[ "$file" == multicast* ]]; then
-              url="https://raw.githubusercontent.com/vidarsong/iptv-sdlt/main/multicast/${file}"
-            else
-              url="https://raw.githubusercontent.com/vidarsong/iptv-sdlt/main/unicast/${file}"
-            fi
-            echo "Downloading $file from $url"
-            curl -fsSL "$url" -o "sync/$file" || echo "Warning: $file not found, skipping"
-          done
-
-      - name: List downloaded files
-        run: ls -lh sync/
-
-      - name: Push to Gitee sync folder
+      - name: Sync to Gitee
+        env:
+          G_TOKEN: ${{ secrets.GITEE_TOKEN }}
         run: |
-          cd sync
-          git init -b main
-          git config user.name "bot"
-          git config user.email "bot@example.com"
-          git remote add origin "https://mevoyacasa:${{ secrets.GITEE_TOKEN }}@gitee.com/mevoyacasa/iptv.git"
-          git add .
-          git commit -m "Sync files from vidarsong/iptv-sdlt" || echo "Nothing to commit"
-          git push -u origin main --force
+          git remote remove gitee || true
+          git remote add gitee https://mevoyacasa:${G_TOKEN}@gitee.com/mevoyacasa/iptv.git
+          
+          git push gitee HEAD:master --force --tags
+          git push gitee HEAD:master --force --tags
